@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dad Joke Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="header">
+          The <br />
+          "Try Not To Laugh" <br />
+          Challenge
+        </h1>
+      </header>
+      <div class="joke__container">
+        <div id="error-container" class="error__container">
+          <p>
+            Something happened and couldn't load the joke! <br />
+            Tell the devs: <br />
+            <small id="error-message"></small>
+          </p>
+        </div>
+        <p id="joke"></p>
+        <button id="button" class="button" type="button">
+          <span id="loader" class="button__loader"></span>
+          <span id="cta" class="button__cta">I'm ready</span>
+        </button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
